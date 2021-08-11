@@ -81,6 +81,16 @@ object-fit: cover;
 position: relative;
   text-align: center;
 }
+.inside-div a{
+  background: linear-gradient(to right, #867ac5 , mistyrose);  
+  padding: 10px 15px;
+  margin-top: 15px;
+  font-size: larger;
+  border-radius: 6px;
+}
+.inside-div a:hover{
+background: linear-gradient(to right, rgb(243, 199, 206) , mistyrose);
+}
 .centered {
  
   z-index: 100;
@@ -95,8 +105,9 @@ position: relative;
   position: fixed;
   width: 300px;
   height: 100%;
-  background: 
+  background:
   linear-gradient(#878de4, MistyRose);
+  /* linear-gradient( #BBC2EE,transparent); */
   padding: 30px 0;
 }
 .wrapper2 .sidebar ul li {
@@ -125,7 +136,6 @@ position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 0 15px; */
   color: #594f8d;
   margin-bottom: 10px;
   font-size: 32px;
@@ -134,24 +144,15 @@ position: relative;
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  /* align-items: center; */
 
-  box-shadow: 0px 5px 25px -5px #999;
-  border: 10px solid white;
-  /* border: none; */
+  box-shadow: 0px 5px 25px -5px mistyrose;
+  /* border: 10px solid #BBC2EE; rgb(250, 249, 249); */
+  border: 10px solid #878de4;
   margin: 10px 50px;
 }
 
-/* .max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-} */
+
 .wrapper .max-width{
-    /* margin: auto 0 auto 40px; */
     width: 100%;
     margin-left: 300px;
     padding: 200px 80px;
@@ -293,7 +294,7 @@ position: relative;
 }
 @keyframes load4 {
   0% { width: 0; }
-  100% { width: 68%; }
+  100% { width: 70%; }
 }
 @keyframes load5 {
   0% { width: 0; }
@@ -344,14 +345,6 @@ h3 {
 
 }
 
-
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap'); */
-
-/* body {
-  background: #f2f2f2;
-} */
 .edu-place{
   display: flex;
   flex-direction: column;
@@ -359,23 +352,16 @@ h3 {
   align-items:center;
 }
 .education .edu-container  {
-  /* position: absolute; */
-   /* position: inherit; */
-  /* left: 50%; */
-  /* top: 50%; */
-  /* transform: translate(0, -50%); */
   height: 600px;
   width: 600px;
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
+  background: url("./picture6.modified.jpg");
   overflow: hidden;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 0 0 20px 8px #d0d0d0;
   /* margin-left: 300px; */
   display: flex;
-  /* margin-top: 20%; */
-  /* flex-direction: column; */
-  /* justify-self: center; */
   justify-content: center;
   align-items: center;
 } 
@@ -388,24 +374,38 @@ h3 {
   text-align: center;
   color: black;
   padding: 40px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  /* font-family: 'Merriweather', serif; */
 } 
-
+.edu-content .cards {
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+.edu-content .cards:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+.edu-content .cards__title {
+  font-weight: 400;
+  color: #ffffff;
+}
+.card-1 {
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+.card-2 {
+  background: radial-gradient(#76b2fe, #b69efe);
+}
 .edu-container h3 {
-  /* font-weight: 900; */
   font-weight: 300;
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
 } 
-
- .education p {
+.edu-container h4 {
   font-weight: 300;
   font-size: 20px;
-
 } 
 
 /* .education .edu-flap {
@@ -457,7 +457,6 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 0 15px; */
   color: #594f8d;
   margin-bottom: 10px;
   font-size: 32px;
@@ -553,7 +552,7 @@ body {
 }
 
 .card__title {
-  font-size: 1em;
+  font-size: 18px;
   margin: 0 0 .3em;
   color: #6A515E;
 }
@@ -567,7 +566,7 @@ body {
 }
 
 .card__status {
-  font-size: .8em;
+  font-size: .16px;
   color: #D7BDCA;
 }
 
@@ -575,11 +574,18 @@ body {
   padding: 0 2em 2em;
   margin: 0;
   color: #594f8d;
-  font-family: "MockFlowFont";   
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 9;
   overflow: hidden;
 }
 
+/*  Footer section */
+
+footer {
+  background: linear-gradient(transparent, mistyrose) ;
+  text-align: center;
+  padding: 50px 20px;
+  font-size: larger;
+}
 
