@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Ivy's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Risque&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
-
     <div class="wrapper">
 
         <!-- home section start -->
@@ -19,21 +19,25 @@
         <section id="bio">
             <div class="wrapper2">
                 <div class="sidebar">
-                    <img src="./IMG_2007 - Copy_1.jpg" alt="" />
-                    <h3>Ivy C. Gesare</h3>
+
                     <ul id="mainMenu">
+                        <li><img src="./logo.png" alt=""></li>
                         <li><a href="#bio">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#experience">Experience</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <!-- <li><a href="#">Contact</a></li> -->
                     </ul>
                 </div>
             </div>
             <div class="max-width">
-                <div class="home-content">
+                <div class="in-div picture">
+                    <div class="image"><img src="./IMG_2007 - Copy_1.jpg" alt="" /></div>
+                    <h3>Ivy C. Gesare</h3>
+                </div>
+                <div class="in-div home-content">
                     <div class="text-1">Hello! </div>
                     <div class="text-2">I'm Ivy </div>
                     <div class="text-3">And I am a <span>Programmer</span> </div>
@@ -79,6 +83,9 @@
 
         </div>
     </section>
+
+
+
     <section class="three" id="skills">
         <div class="wrapper3">
             <div class="new-sections one">
@@ -90,36 +97,36 @@
             <div class="new-sections two">
                 <div class="inside-div">
                     <!-- <h3>What can I do?
-                    </h3> -->
+                        </h3> -->
 
                     <p>HTML5</p>
                     <div class="progress">
-                        <div class="progress-value">90%</div>
+                        <div class="progress-value">80%</div>
                     </div>
 
                     <p> CSS </p>
                     <div class="progress">
-                        <div class="progress-value1">85%</div>
+                        <div class="progress-value1">70%</div>
                     </div>
 
                     <p> JAVASCRIPT </p>
                     <div class="progress">
-                        <div class="progress-value2">70%</div>
+                        <div class="progress-value2">60%</div>
                     </div>
 
                     <p> REACT.JS </p>
                     <div class="progress">
-                        <div class="progress-value3">80%</div>
+                        <div class="progress-value3">70%</div>
                     </div>
 
                     <p> C# </p>
                     <div class="progress">
-                        <div class="progress-value4">70%</div>
+                        <div class="progress-value4">50%</div>
                     </div>
 
                     <p> LINUX OS </p>
                     <div class="progress">
-                        <div class="progress-value5">92%</div>
+                        <div class="progress-value5">80%</div>
                     </div>
                 </div>
             </div>
@@ -154,7 +161,7 @@
 
     <section class="experience" id="experience">
 
-        <h2>What have I done?</h2>
+        <h2>My Experience?</h2>
 
         <ul class="cards">
             <li>
@@ -162,9 +169,6 @@
                     <img src="./picture2.modified.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                         <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                                <path />
-                            </svg>
 
                             <div class="card__header-text">
                                 <h3 class="card__title">Tech4Dev| Women Techsters Fellowship| May 2021 - Feb 2022</h3>
@@ -184,9 +188,6 @@
                     <img src="./picture.modified.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                         <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                                <path />
-                            </svg>
 
                             <div class="card__header-text">
                                 <h3 class="card__title">Magfre Enterprises Limited| Audio-Visual, Communication and
@@ -211,9 +212,7 @@
                     <img src="./picture.modified.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                         <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                                <path />
-                            </svg>
+
 
                             <div class="card__header-text">
                                 <h3 class="card__title">Kenya Airports Authority| Jomo Kenyatta International
@@ -237,9 +236,6 @@
                     <img src="./picture2.modified.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                         <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                                <path />
-                            </svg>
 
                             <div class="card__header-text">
                                 <h3 class="card__title">Kenya Pipeline Company| Instrumentation and Communication
@@ -257,6 +253,69 @@
         </ul>
 
     </section>
+    <section class="work" id="work">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-card">
+                <img src="./RandomMealGenerator.png" alt="">
+
+                <!-- A div with card__details class to hold the details in the card  -->
+                <div class="card__details">
+                    <!-- Span with tag class for the tag -->
+                    <span class="tag">React</span>
+
+
+                    <!-- A div with name class for the name of the card -->
+                    <div class="name">Random Meal Generator</div>
+
+                    <p>This app aims to make picking of meals easier through a simple algorithm, it also showcases
+                        Responsive Web Design.</p>
+
+                    <a href="http://random-meal-generator-gilt.vercel.app/" class="work-btn">View App</a>
+                    <!-- <button class="work-btn"></button> -->
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="./To-Do App.png" alt="">
+
+                <!-- A div with card__details class to hold the details in the card  -->
+                <div class="card__details">
+                    <span class="tag">React</span>
+
+
+                    <!-- A div with name class for the name of the card -->
+                    <div class="name">To Do App</div>
+
+                    <p>This is a to-do app. It applies the use of React and imposes
+                        React-Routing techniques. I aslo applied a darker theme for this.
+                    </p>
+
+                    <a href="https://week5-tau.vercel.app/" class="work-btn">View App</a>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="./To-Do App.png" alt="">
+
+                <!-- A div with card__details class to hold the details in the card  -->
+                <div class="card__details">
+
+                    <span class="tag">React</span>
+
+
+                    <!-- A div with name class for the name of the card -->
+                    <div class="name">Lago di Braies</div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim
+                        sed
+                        diam
+                        pharetra
+                        vitae ipsum odio.</p>
+
+                    <button class="work-btn">View App</button>
+                </div>
+            </div>
+    </section>
+
     <footer>
         <p>Site created by Ivy. Copyright &copy; 2021.</p>
     </footer>
